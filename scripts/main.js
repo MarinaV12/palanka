@@ -14,15 +14,16 @@ function multiply(num1,num2) {
   }
  alert(multiply(10,9))*/
 
- document.querySelector('p').onclick = function() {
-    alert('Ouch! Stop poking me!');
+document.querySelector('p').onclick = function() {
+  alert('Ouch!!! Stop poking me!');
 }
 
 var myImage = document.querySelector('img');
 
 myImage.onclick = function() {
-    var mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/spring-tree.jpg') {
+    const mySrc = myImage.getAttribute('src');
+
+    if (mySrc === 'images/spring-tree.jpg') {
       myImage.setAttribute ('src','images/rainy-day.jpg');
     } else {
       myImage.setAttribute ('src','images/spring-tree.jpg');
